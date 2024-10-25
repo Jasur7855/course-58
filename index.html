@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="fio" >Каграманян</h1>
+    <h2 class="fio">Юрий</h2>
+    <h3 class="fio">Максимович</h3>
+
+    <a href="https://instagram.com/maksimovich.kit">Instagram</a>
+    <a href="https://t.me/maksimovich">Telegram</a>
+
+    <img src="./photo.jpeg" alt="Юрий Максимович" id="myPhoto">
+
+    <p>Самый лучший и скромный преподаватель в школе актуальных профессий TEHNIKUM</p>
+
+    <h2>Мои навыки:</h2>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>ReactJS</li>
+    </ol>
+
+    <h2>Виды инпутов</h2>
+    <form action="#">
+        <div>
+            <label for="usernameInput">Имя</label>
+            <input type="text" name="username" id="usernameInput" placeholder="Имя" value="Жасур">
+        </div>
+
+        <div>
+            <label>
+                Возраст:
+                <input type="number" name="age" value="27">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Любимый цвет:
+                <input type="color" name="favotiteColor">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" required>
+                Согласен, что ЮМ лучший препод
+            </label>
+        </div>
+
+        <div>
+            Ваш пол:
+            <label>
+                <input type="radio" name="gender" value="male">
+                М
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Ж
+            </label>
+            </label>
+        </div>
+
+        <div>
+            Страна:
+            <select name="country">
+                <option value="uzb">Узбекистан</option>
+                <option value="usa">США</option>
+            </select>
+        </div>
+
+        <input type="hidden" name="token" value="iewngierngernwguberguberg">
+
+        <input type="submit">
+    </form>
+
+
+    <h2>Калькулятор</h2>
+    <div>
+        <label>
+            a =
+            <input type="number" name="x">
+        </label>
+    </div>
+    <div>
+        <label>
+            b = 
+            <input type="number" name="y" >
+        </label>
+    </div>
+    <div class="operators">
+        <button onclick="sum()">+</button>
+        <button>-</button>
+        <button>*</button>
+        <button onclick="divide()">/</button>
+    </div>
+    <span id="calcResult">Результат:</span>
+    <ol class="skils">
+        <li>Java Script</li>
+        <li>ReactJS</li>
+        <li></li>
+        <li>Java Script</li>
+        <li>ReactJS</li>
+        <li>NextJs</li>
+        <li>HTMl</li>
+        <li>CSS</li>
+        <li>Java Script</li>
+        <li></li>
+        <li>NextJs</li>
+    </ol>
+    <input type="checkbox" class="name" >
+    <span>Согласен</span>
+    <div class="coursePrice">
+        <h1>Калькулятор стоимости курса</h1>
+        <label >
+            Курс:
+            <select id="courseName" id="" oninput="coursePrice()" >
+                <option value="none">Выберите курс</option>
+                <option value="Python">Python</option>
+                <option value="Front">Frontend</option>
+                <option value="UX">UX/UI</option>
+            </select>
+        </label>
+        
+        <label >
+            Скидка:
+            <input id="step" type="range" value="0" oninput="coursePrice()"  min="0" max="50" step="5">
+            <span id="sale">0%</span>
+        </label>
+        <label >
+            Сумма:
+            <input type="text" readonly class="price">
+            
+        </label>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
